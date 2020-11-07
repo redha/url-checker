@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 44335;
 
 /***  App Configuration ***/
 app.use((req, res, next)=>{
-    res.header("Access-Control-Allow-Origin", "localhost:8080");
+    res.header("Access-Control-Allow-Origin", "http://localhost:8080");
     res.header("Access-Control-Allow-Headers", "Content-Type, authorization");
     res.header("Access-Control-Allow-Methods", "GET, OPTIONS");
     res.header("Content-Type", "application/json");

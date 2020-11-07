@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h1>Hi there !!</h1>
+    <h1>URL Checker</h1>
+    <p>Add some urls and I'll check them every 5 minutes. You can do it manually by clicking on 'check' button.</p>
     <form @submit.prevent="addAddress">
       <input type="text" placeholder="https://example.com" autocomplete="true" required v-model="newAddress">
       <button type="submit">Add</button>
@@ -47,7 +48,18 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+ul{
+  list-style: none;
+}
+button{
+  line-height: 1.3rem;
+}
+input[type=text]{
+  min-width: 250px;
+  width: 80%;
+  line-height: 1.3rem;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,5 @@
-# URL CKECKER
-Check the availibility of an http/https resource
+# URL CHECKER
+Check the availibility of multiple http/https resources
 
 #### lunch the server module
 
